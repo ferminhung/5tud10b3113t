@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div data-role="page" id="listareservas">
+           <div class="bar">
+                <a class="btn-for-slider icon-menu" href="#slidermenu"></a>
+                <img id="btHome" class="img-logo" src="img/logo-foot.png">
+                <div class="btn-top-sush"><div class="small-text text-white">ConAcademia</div><div class="big-text text-red"><span class="icon-book"></span> Asistencia</div></div>
+           </div> 
+           <div role="main" class="ui-content">
+              
+               <div class="ui-content"> 
+                  <h3 id="labDescripcion"><span class="icon-book"></span> Hoy <h3>
+                  <form name="formReservas">
+                      <label id="labClases" >Clases </label>
+                      <select id="listaClases">
+                        <option value="SIN"> .... </option>
+                      </select>
+                      <label >Activos</label>
+                      <label id="labCupos"> </label>
+                  </form>
+                  <br>
+                  <br>
+                  <center>
+                  <table data-role="table"  id="tablafiliados" style="width: 90% !important; align-content: center;">
+                   
+                    <tbody id="afiliados">
+                    </tbody>
+                  </table></center>
+                  <br>
+                  <br>
+                  <center><button  id="volverInicio" class="btn-burbit"><span class="icon-map"></span></span> Ir a Inicio</button></center>
+                  <!-- <center><button class="btn-redondo"  type="button" id="btMenu" ><span class="icon-map"></span></button></center> -->
+                  <label id="labAsistentes"> </label>
+                  <center>
+                  <table data-role="table"  id="tablasistencia" style="width: 90% !important; align-content: center;">
+                   
+                    <tbody id="asistentes">
+                    </tbody>
+                  </table></center>
+                  <br>
+                  <br>
+               </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>

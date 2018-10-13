@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="jqm/jquery.mobile.css">
+        <link rel="stylesheet" type="text/css" href="css/panel_main.less.css" class="main-less">
+        <link rel="stylesheet" href="fonts/style.css">
+        <meta charset="UTF-8"> </meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"> </meta>
+
+        <script src="cordova.js"></script>
+        <script src="xhr.js"></script>
+        <script src="panel.js"></script>
+        <script type="application/javascript" src="lib/jquery.min.js"></script>
+        <script type="application/javascript" src="jqm/jquery.mobile-min.js" data-ver="0"></script>
+    </head>
+    
+    <body>   
+        <div data-role="page" id="panel" style="background-color:  #fdedec;">
+          <div class="bar" style="background-color:   #c72d8a ;">
+                <a class="btn-for-slider icon-menu" style="color: white !important;" href="#slidermenu"></a>
+                <img id="btHome" class="img-logo" src="img/conacademiagrande.png">
+                <div class="btn-top-sush">
+                  <div class="small-text text-white">App ConAcad para</div>
+                  <div id="nombreacad" class="big-text text-red" style="color: white;"> Le Studio de Ballet</div>
+                </div>
+         </div>
+          <div data-role="panel" id="slidermenu"> 
+            <br><br><br>
+            <label>Usuario y Comunidad</label>
+            <h3 id="hdCabeceraUser" style="background-color: #c72d8a; "><span class="icon-user"></span> Cargando Usuario....</h3>    
+            <br><br><br>
+            <ul data-role="listview" class="ui-for-list2" id="listaizq">
+              <li class="dark-red"><a id="liStalk" class="lista-izq"><span class="icon-eye"></span> Actividad Web</a></li>
+            </ul>
+            <div id="espacioStalk"> </div>
+            <br><br>
+            <ul data-role="listview" class="ui-for-list2" >
+              <li class="orange" ><a id="liCuenta" class="lista-izq"><span class="icon-user"></span>  Ficha del Alumno(a)</a></li>
+              <li class="yellow"><a id="liRMs" class="lista-izq"><span class="icon-fire"></span> Estado de Cuenta</a></li>
+              <li class="red"><a id="liSolicitudes" class="lista-izq"><span class="icon-point-up"></span> Solicitudes</a></li>
+              <li class="yellow"><a id="liForo" class="lista-izq"><span class="icon-info"></span> Foro </a></li>
+              <li class="purple"><a id="liCerrar" class="lista-izq"><span class="icon-exit"></span> Cerrar Sesi&oacute;n</a><br></li>
+            </ul>
+          </div>
+
+
+            
+          <div role="main" >
+              
+              <center>
+              <div id="espaciocartel" style="widtt">
+                  <img id="cartel" class="ui-img2" width="95%" src="img/imagenconacad.png">
+              </div> 
+              </center>      
+              <center>  <h3 id="hdHeadPanel" style="color:  #a93226 ;"><span class="icon-hour-glass"></span> Espera un momento, cargando....</h3> </center>
+              <br>
+              <center><button  id="liWOD" class="btn-burbit"><span class="icon-rocket"></span> Cartelera Informativa</button></center>
+              <center><button  id="liPagos" class="btn-burbit" ><span class="icon-credit-card"></span> Gestion de Pagos</button></center>
+              <center><button  id="liMarcas" class="btn-burbit"><span class="icon-power"></span> Evaluaciones</button></center>
+              <center><button  id="liPerfil" class="btn-burbit" ><span class="icon-user"></span> Mi Perfil</button></center>
+              <center><button  id="liReservas" class="btn-burbit"><span class="icon-checkmark"></span> Información General</button></center>
+              <br>
+              <br>
+
+        </div>
+             
+        </div>
+    </body>
+
+</html>

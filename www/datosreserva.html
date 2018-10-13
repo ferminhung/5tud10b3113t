@@ -1,0 +1,37 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        
+        <div data-role="page" id="datosreserva">
+            <div role="main" class="ui-content">
+               <div data-role="header">
+                   <h3 id="InfoAreas"><span class="icon-hour-glass"></span> Buscando datos de la Reserva</h3>
+               </div>
+               <div class="ui-content"> 
+                    <form name="formAreas" >
+                        <label id="Area" >Area </label>
+                        <input id="tArea" type="text" </input>
+                        <label id="fecha" >Fecha </label>
+                        <input id="tFecha" type="date" </input>
+                        <label >Hora Inicio </label>
+                        <input id="tInicio" type="time" </input>
+                        <label >Hora Fin </label>
+                        <input id="tFin" type="time" </input>
+                        <label  >Descripcion de la Actividad </label>
+                        <input id="tDescripcion" type="text"</input>
+                        <br>
+                        <ul data-role="listview">
+                            <li data-icon="check"><a id="btModificar" ><span class="icon-calendar"></span> Modificar Reserva</a></li>
+                            <li data-icon="minus"><a id="btEliminar" ><span class="icon-calendar"></span> Eliminar Reserva</a></li>
+                            <li ><a id="btPago" ><span class="icon-credit-card"></span> Ver Pago</a></li>
+                            <li ><a id="btMensaje" ><span class="icon-mail"></span> Enviar Mensaje</a></li>
+                            <li><a id="btMenu" ><span class="icon-map"></span> Ir a Lista de Reservas</a></li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
