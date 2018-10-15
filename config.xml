@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="studioballet.movil.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="studioballet.movil.app" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Le Studio de Ballet App</name>
     <description>Aplicación Movil ConAcademia App Management para Le Studio de Ballet</description>
     <author email="contacto@mvpmovil.com" href="http://mvpmovil.com">
@@ -40,5 +40,7 @@
 
         <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="The app would like to access the photo library when you attach images to content." />
     </plugin>
+    <engine name="ios" spec="~4.5.4" />
+    <engine name="android" spec="^7.0.0" />
     <preference name="android-minSdkVersion" value="26" />
 </widget>

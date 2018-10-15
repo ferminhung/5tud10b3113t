@@ -4,12 +4,6 @@ $(document).on("pageshow","#panel",function(event, ui){
     var sIdentificador=localStorage.getItem("codigoweb");   //aSesion["CodigoWeb"];
     localStorage.setItem("imagenPago", "");
 
-
-    
-    
-   
-
-
     //var sNombre=aSesion["nombre"];
     $("#hdCabeceraUser").html("<span class='icon-user'></span> "+sIdentificador);
     $.ajax({
@@ -31,21 +25,23 @@ $(document).on("pageshow","#panel",function(event, ui){
 
     $('#liSolicitudes').click(function(){
         var sSugerencia=prompt("Tus sugerencias son bienvenidas");
-        $.ajax({
-            data:{
-                sCodigoWebPhp:sIdentificador, sSugerenciaPhp:sSugerencia, Mandato:'Sugerencia'
-            },
-            url:globalURL,
-            method:'POST',
-            beforeSend:function(){
-                $('.cargando').fadeIn();
-            },success:function(respuesta){  
-                alert(respuesta);
-            },error:function(jqXHR, textStatus, errorThrown){
-                $.mobile.loading( "hide" );
-                ajax_error(jqXHR, textStatus, errorThrown,true);
-            }
-        });
+        if (sSugerencia!='' && sSugerencia!='null'){
+           $.ajax({
+                data:{
+                    sCodigoWebPhp:sIdentificador, sSugerenciaPhp:sSugerencia, Mandato:'Sugerencia'
+                },
+                url:globalURL,
+                method:'POST',
+                beforeSend:function(){
+                    $('.cargando').fadeIn();
+                },success:function(respuesta){  
+                    alert(respuesta);
+                },error:function(jqXHR, textStatus, errorThrown){
+                    $.mobile.loading( "hide" );
+                    ajax_error(jqXHR, textStatus, errorThrown,true);
+                }
+            });
+        }
     });
     $('#liStalk').click(function(){
 		if($('#espacioStalk').html().length>10){
